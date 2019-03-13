@@ -46,4 +46,6 @@ describe('basic action', () => {
   });
 
   test.todo('acceptDiceRequest should be ok');
+
+  test.todo('sendDiceInvite should be ok');
 })
