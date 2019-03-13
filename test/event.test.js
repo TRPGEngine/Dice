@@ -50,4 +50,6 @@ describe('basic action', () => {
   test.todo('sendDiceInvite should be ok');
 
   test.todo('acceptDiceInvite should be ok');
+
+  test.todo('sendQuickDice should be ok');
 })
