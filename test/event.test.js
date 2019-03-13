@@ -41,7 +41,9 @@ describe('basic action', () => {
       reason: 'test',
     })
 
-    expect(ret).toBeSuccessd();
+    expect(ret).toBeSuccess();
     expect(ret).toHaveProperty('pkg');
   });
+
+  test.todo('acceptDiceRequest should be ok');
 })
