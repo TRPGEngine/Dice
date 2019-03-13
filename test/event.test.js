@@ -32,4 +32,16 @@ describe('basic action', () => {
 
     expect(ret.result).toBe(true);
   });
+
+  test('sendDiceRequest should be ok', async () => {
+    let ret = await emitEvent('dice::sendDiceRequest', {
+      to_uuid: this.userInfo.uuid,
+      is_group: false,
+      dice_request: '1d100',
+      reason: 'test',
+    })
+
+    expect(ret).toBeSuccessd();
+    expect(ret).toHaveProperty('pkg');
+  });
 })
